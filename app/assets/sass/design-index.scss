@@ -1,0 +1,166 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-navigation";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+// Override the govuk-frontend font stack
+// $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+$govuk-font-family: "Avenir Next", "Arial", "sans-serif";
+
+// Override the canvas background colour, which is normally grey to blend with
+// the GOV.UK footer.
+// $govuk-canvas-background-colour: $govuk-body-background-colour;
+
+
+// /////////////////////////////////////////////////////////////////////
+// styles below override those in the gov frontend kit sass
+// /////////////////////////////////////////////////////////////////////
+
+
+// /////////////////////////////////////////////////////////////////////
+// core styles /////////////////////////////////
+// /////////////////////////////////////////////////////////////////////
+
+// font - because i cant find how to make the override above work - doesn't seem to work
+
+* {
+	font-family: "Avenir Next", "Arial", "sans-serif" !important;
+}
+
+// page width
+
+.govuk-width-container {
+  max-width: 1100px;
+  margin: 0 15px;
+}
+
+@supports (margin: unquote("max(calc(0px))")) {
+  .govuk-width-container {
+    margin-right: unquote("max(15px, calc(15px + env(safe-area-inset-right)))");
+    margin-left: unquote("max(15px, calc(15px + env(safe-area-inset-left)))");
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-width-container {
+    margin: 0 30px;
+  }
+  @supports (margin: unquote("max(calc(0px))")) {
+    .govuk-width-container {
+      margin-right: unquote("max(30px, calc(15px + env(safe-area-inset-right)))");
+      margin-left: unquote("max(30px, calc(15px + env(safe-area-inset-left)))");
+    }
+  }
+}
+
+@media (min-width: 1160px) {
+  .govuk-width-container {
+    margin: 0 auto;
+  }
+  @supports (margin: unquote("max(calc(0px))")) {
+    .govuk-width-container {
+      margin: 0 auto;
+    }
+  }
+}
+
+// header  /////////////////////////////////
+
+.govuk-header {
+  border-bottom: 10px solid #033860;
+  background: #E6F4FF;
+}
+
+.govuk-header__container {
+  position: relative;
+  margin-bottom: -10px;
+  padding-top: 10px;
+  border-bottom: 10px solid #033860;
+}
+
+.govuk-header__link, .govuk-header__link:visited {
+  color: #0b0c0c;
+}
+
+.govuk-header__link--service-name {
+  margin-top: 3rem;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  line-height: 1.04167;
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-header__link--service-name {
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 1.04167;
+    margin-top: 9rem;
+  }
+}
+
+.govuk-header-tag {
+  color: #0b0c0c;
+  font-family: American Typewriter, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 18px;
+  font-size: 1.125rem;
+
+  line-height: 1.11111;
+  margin-bottom: 20px;
+}
+
+@media print {
+  .govuk-header-tag {
+    color: #000000;
+  }
+}
+
+@media print {
+  .govuk-header-tag {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-header-tag {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .govuk-header-tag {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-header-tag {
+    margin-bottom: 30px;
+  }
+}
+
+// footer ////////////////////
+
+.govuk-footer {
+  background: #e6e6e6;
+}
+

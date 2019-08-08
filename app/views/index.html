@@ -1,0 +1,367 @@
+
+{% extends "layout-index-brand.html" %}
+
+{% block pageTitle %}
+  Developing Land and Property index
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/service-history.js"></script>
+  <script type="text/javascript">
+    var $element = $('#service-history')
+    var serviceHistory = new GOVUK.Modules.ServiceHistory()
+    serviceHistory.start($element)
+  </script>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">Introduction<span class="govuk-visually-hidden"> to Develop Land and Property</span></h1>
+
+    <p>I want to develop land and property covers the service area of building new homes.</p>
+
+    <p>The scope goes from land acquisition, through building and selling properties, to the disposal of the remaining parts of the land once all properties are sold.</p>
+
+    <p>Housing developers are not the only group of people and organisations involved in this area, with home buyers, their conveyancers, mortgage lenders, local authorities, Ordnance Survey and HM Land Registry playing important parts.  These groups of users and organisations are really ecosystems of departments and further organisations, with other bodies like House Builders Federation also being involved.</p>
+
+    <p>The service area team has produced work on a variety of topics in this service area in the discovery, multiple alpha and beta phases.</p>
+
+    <p>Links to the production service and <a href="screens">screenshots</a> of each phase are available in the history below</p>
+
+    <div class="govuk-section-break--xl"></div>
+
+
+    <h2 class="govuk-heading-l">History</h2>
+
+    <div id="service-history" class="app-step-nav app-step-nav--large app-step-nav--active" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
+      <ul class="app-step-nav__steps">
+        <li class="app-step-nav__step js-step" id="check-youre-allowed-to-drive" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Phase 6</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Private beta service and project closed
+                <span class="govuk-caption-m">closure - July 1019</span>
+              </span>            
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-check-youre-allowed-to-drive-1">
+
+            <p class="app-step-nav__paragraph">Don&apos;t continue to ask Developers for  digital plan drawings (CAD)</p>
+
+            <p class="app-step-nav__paragraph">Don&apos;t do any further work to prove, or use developer CAD data in the creation of title plans or extents</p>
+
+            <p class="app-step-nav__paragraph">Closed the <a href="https://view-housing-development.landregistry.gov.uk">view housing development service</a>
+            </p>
+
+            <p><a href="screens#closed">screenshots</a></p>
+
+          </div>
+        </li>
+
+        <li class="app-step-nav__step js-step" id="check-youre-allowed-to-drive" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Phase 4</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Can we use CAD to create title plans
+                <span class="govuk-caption-m">Alpha - April to June 1019</span>
+              </span>            
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-check-youre-allowed-to-drive-1">
+<!--             <p class="app-step-nav__paragraph">Will Housing developers share their digital drawings (CAD) with us?</p>
+            <p class="app-step-nav__paragraph">What would it take for them to share the drawings?  Is an incentive required?</p>
+            <p class="app-step-nav__paragraph">Can we use the digital drawings to automate title plans, or part of?  Create a proof of concept - a working prototype.</p>
+            <p class="app-step-nav__paragraph">How much of the drawing data is usable?  what makes it useable, or unusable?</p> -->
+            <p class="app-step-nav__paragraph">It was proven that title plans could be automated using digital plan drawings, in the current Mapping system</p>
+
+            <p class="app-step-nav__paragraph">75% of plots in the geo-located digital drawings, compared to extents drawn by caseworkers, were within the same tolerance we accept that caseworkers should draw to
+              <ul>
+                <li><a href="https://docs.google.com/presentation/d/1zIYmsYP1EfIKVI3nvowIqfMd2qaqKBiJV5BQ47ZzCPU/edit#slide=id.g7f523b7e11c8a960_0">Stages of drawing a title plan that could be automated</a></li>
+                <li>the range of <a href="https://docs.google.com/document/d/1T-aWTHb1jBdFZ7L0wyWpsZwxyP1Lfyq-xG2iA1xYV54/edit">CAD (digital drawings) received from developers</a></li>
+                <li>video <a href="https://drive.google.com/open?id=1QnLW6vPal7v8Cr1hbbIfxoSzLbYpy8Aq">demonstration of automating title plans from digital development plans</a></li>
+              </ul>
+            </p>
+            <p class="app-step-nav__paragraph">Further significant technical work would be required to automate, at scale, title extents snapped to OS base maps, as caseworkers would do</p>
+            <p class="app-step-nav__paragraph">It was demonstrated that there is no technical, intellectual property, or other fundamental reason stopping developers sharing their digital plan drawings with HM Land Registry</p>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="prepare-for-your-theory-test" >
+          <div class="app-step-nav__header app-step-nav__header__and js-toggle-panel" data-position="4">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--logic">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    and
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Operate, but don't extend, view housing development service
+                <span class="govuk-caption-m">Private beta - April to June 1019</span>
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-prepare-for-your-theory-test-4">
+            <p class="app-step-nav__paragraph">Keep the development information in the public beta up to date, but do not add any new developments or features</p>
+            <p class="app-step-nav__paragraph">Don't go seeking new users for the trial or speak to new people using the service.</p>
+            <p class="app-step-nav__paragraph">Do collect feedback from existing users met.</p>
+            <p><a href="screens#privatebeta">screenshots</a></p>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="check-youre-allowed-to-drive" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Phase 4</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Create service - view housing development
+                <span class="govuk-caption-m">Private beta - Oct 2018 - March 2019</span>
+              </span>            
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-check-youre-allowed-to-drive-1">
+            <p class="app-step-nav__paragraph">Create the view housing development service - an MVP service.</p>
+            <p class="app-step-nav__paragraph">Publish the approved estate plans from housing developers (PDF)</p>
+            <p class="app-step-nav__paragraph">Publish a list of plots, if they have been approved and when, and the addresses of the plots.</p>
+            <p class="app-step-nav__paragraph">Create a publicly sharable URL for the lifetime of the housing development that will always link to up-to-date information.</p>
+            <p><a href="screens#privatebeta">screenshots</a></p>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="prepare-for-your-theory-test" >
+          <div class="app-step-nav__header app-step-nav__header__and js-toggle-panel" data-position="4">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--logic">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    and
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                investigate opportunities to use developers digital drawings
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-prepare-for-your-theory-test-4">
+            <p class="app-step-nav__paragraph">Would housing developers share their digital drawing with us</p>
+            <p class="app-step-nav__paragraph">How closely do those drawings match the property extents drawn after build, survey, and registration</p>
+            <p class="app-step-nav__paragraph">Are the drawings of benefit during the survey process at Ordnance Survey</p>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="get-a-provisional-licence" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="2">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Phase 3</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Scope beta service proposition to share housing development plans (GDS Service Assessment <span style="color:green;">&#x2714;</span>)
+                <span class="govuk-caption-m">Alpha - August - Sept 2018</span>
+              </span> 
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-get-a-provisional-licence-2">            
+            <p class="app-step-nav__paragraph">create, and have assessed a proposition for a private beta service in the transparency theme - making housing development plans publicly available</p>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="get-a-provisional-licence" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Phase 2</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Broad exploration of Developing new homes - developer services
+                <span class="govuk-caption-m">Alpha - Feb - August 2019</span>
+              </span> 
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-get-a-provisional-licence-2">
+            <p class="app-step-nav__paragraph">words about the big themes, and the scope. should each section say what was done/learnt</p>
+          </div>
+
+        </li>
+
+        <li class="app-step-nav__step js-step" id="get-a-provisional-licence" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="4">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Phase 1</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Investigate the development and sale of new properties
+                <span class="govuk-caption-m">Discovery - Nov - December 2017</span>
+              </span> 
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-get-a-provisional-licence-2">
+            <p class="app-step-nav__paragraph">Understood and mapped out the phases and stages and process of developing and selling new build properties, not just at HM Land Registry</p>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!----------   grid-row-one-third   --------->
+
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Further reading</h2>
+    <ul class="govuk-list govuk-body-s">
+      <li><a href="https://docs.google.com/document/d/1ZMzVsgBuFQi39hHPxXaxM8xXF5zQusE4DWHLYftvIIA/edit">User research</a></li>
+      <li><a href="screens">Screenshots</a></li>
+      <li><a href="design">Design prototypes and assets</a></li>
+      <li><a href="http://techdocs.dev.ctp.local/index.php/Develop:_View_Development_Plan">Technical documentation</a></li>
+      <li><a href="https://docs.google.com/document/d/1OuRIdC59vJL9HiiUIzZWKWmnfo-A6t2Px6ua9lOPbRg/edit">Benefits</a></li>
+      <div class="govuk-section-break--m"></div>
+      <li><a href="https://drive.google.com/drive/folders/0B8qQo5w3sOrHelJZSXhzeVhQa00">Google drive (documentation)</a></li>
+      <li><a href="https://trello.com/b/jqT0Uy0q/cad-investigation-phase">Trello board (look in first column for links to useful things)</a></li>       
+      <li><a href="https://sites.google.com/s/1EyN4Ur785MrwZfioGc1WjOVAFAVp3Mpi/p/1kkOg3Rxp0vHXXLKcFLq87SAJwv12s6xH/edit">Programme wiki</a></li>
+      <li><a href="https://landregistryuk.sharepoint.com/sites/NewBuildsDiscovery">Sharepoint</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- <div class="govuk-grid-row">
+  <div class="govuk-section-break--xl">
+    <div class="govuk-grid-column-one-third govuk-section-break--xl" align="center">
+      <img src="../../public/images/service-history.png" alt="Service History icon" height="56">
+      <div class="govuk-section-break--m"></div>
+      <h2 class="govuk-heading-m">Service History</h2>
+      <p>
+          A history showing all the previous prototype versions highlighting what has changed and why, linking in to
+          the user research that triggered the changes.
+      </p>
+    </div>
+
+    <div class="govuk-grid-column-one-third govuk-section-break--xl" align="center">
+      <img src="../../public/images/timeline.png" alt="Timeline icon" height="56">
+      <div class="govuk-section-break--m"></div>
+      <h2 class="govuk-heading-m">Timeline</h2>
+      <p>
+          What stage is the project in, how long will it be there, and when is the plan to move into the next stage.
+      </p>
+    </div>
+
+    <div class="govuk-grid-column-one-third govuk-section-break--xl" align="center">
+      <img src="../../public/images/assessments-2.png" alt="Assessments icon" height="56">
+      <div class="govuk-section-break--m"></div>
+      <h2 class="govuk-heading-m">Assessment</h2>
+      <p>
+          Have there been any assessments? Will there be an assessment, if so, when?
+      </p>
+      <a href="">Digital service standards</a>
+    </div>
+  </div>
+</div>
+
+ -->
+
+
+<!--
+    <!-- this section will be repeated as many times as necessary
+    <h2 class="govuk-heading-l">Version history</h2>
+    <h3 class="govuk-heading-m">
+      <a href="">Version number/title</a>
+      <span class="govuk-caption-m">January 2019</span>
+    </h3>
+    <p>
+      Link to more detailed information over the particular versions; google.IO, scenario’s, flows tested,
+      screen shots,user research etc.
+    </p>
+
+    <h4 class="govuk-heading-s">What is it</h4>
+    <p>Summary of what was planned for this version.</p>
+
+    <h4 class="govuk-heading-s">What was learnt</h4>
+    <p>Bullet point summary.</p>
+
+    <div class="govuk-section-break--l"></div>
+    <hr>
+    <div class="govuk-section-break--m"></div>
+
+    <h3 class="govuk-heading-m">
+      <a href="">Version number/title</a>
+      <span class="govuk-caption-m">December 2018</span>
+    </h3>
+    <p>
+      Link to more detailed information over the particular versions; google.IO, scenario’s, flows tested,
+      screen shots,user research etc.
+    </p>
+
+    <h4 class="govuk-heading-s">What is it</h4>
+    <p>Summary of what was planned for this version.</p>
+
+    <h4 class="govuk-heading-s">What was learnt</h4>
+    <p>Bullet point summary.</p>
+
+    <div class="govuk-section-break--xl"></div>
+    <hr/>
+    <div class="govuk-section-break--l"></div> -->
+
+
+
+
+{% endblock %}
