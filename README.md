@@ -38,7 +38,7 @@ As a designer joining the project/service team I need to get up to speed with:
 * user research / needs
 * other useful project/team information - to enable a designer to be productive on day 1
 * contact details - for these apps or the teams
-* you can link to information behind an orgaisational account
+* you can link to information behind an organisational account
 
 ### Content to NOT publish in the open
 
@@ -52,4 +52,6 @@ As a designer joining the project/service team I need to get up to speed with:
 ## To Do
 
 * come up with a better name / description of what these things are
-* consider other user needs - for example we beleive this content to be useful outside of the design community
+* consider the order of the list - do we need multiple lists
+* consider the status(s) of each thing in the list
+* consider other user needs - for example we believe this content to be useful outside of the design community
