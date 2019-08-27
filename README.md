@@ -55,3 +55,4 @@ As a designer joining the project/service team I need to get up to speed with:
 * consider the order of the list - do we need multiple lists
 * consider the status(s) of each thing in the list
 * consider other user needs - for example we believe this content to be useful outside of the design community
+* consider having one app, rather than one per service/product/project and a separate index page
