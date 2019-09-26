@@ -92,7 +92,7 @@ $govuk-font-family: "Avenir Next", "Arial", "sans-serif";
   border-bottom: 10px solid #033860;
 }
 
-.govuk-header__link, .govuk-header__link:visited {
+.govuk-header__link, .govuk-header__link:link, .govuk-header__link:visited {
   color: #0b0c0c;
 }
 
